@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.infinitynewtab.com:Starlab/extfans-cli.git"
+    "url": "git@github.com:extfans/extfans-cli.git"
   },
   "author": "extfans",
   "license": "ISC",
