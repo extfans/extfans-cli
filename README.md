@@ -20,10 +20,10 @@
 * ~(相当于browser/${process.env.BROWSER}/src)
 * @extfans/lib(相当于@extfans/lib/src)
 
-## webpack entry收集原理
+## webpack entry point收集原理
 1. 生成`manifest.json`，收集文件中以`@/`或`~/`开始的路径，比如`@/pages/newtab.html`
 2. 生成extfans cli配置，记录`webpackPoints`下保存的路径
-3. 将路径转化为entry，比如`@/pages/newtab.html`->`browser/base/src/pages/newtab/index.js`，如果目录下还存在`index.html`就作为该页面对应的html模板传递给`HtmlWebpackPlugin`
+3. 将路径转化为entry point，比如`@/pages/newtab.html`->`browser/base/src/pages/newtab/index.js`，如果目录下还存在`index.html`就作为该页面对应的html模板传递给`HtmlWebpackPlugin`
 
 ## 使用中的项目
 1. http://git.infinitynewtab.com/Starlab/extfans-weather-extension
